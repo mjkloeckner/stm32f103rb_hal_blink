@@ -1,8 +1,9 @@
-# Non-blocking app template
+# app folder
 
-This is a template of a bare metal, event triggered application that runs tasks
-secuentally for STM32 boards using HAL library, in particular STM32F103RB on
-NUCLEO-F103RB board.
+In this folder the main app source code is stores. The main app consists of
+three tasks that are run sequentially one after the other. Task sensor, system
+and actuator. The app is updated on every tick (1 ms) and the app calls the
+update method of every task.
 
 ## Files
 
@@ -43,3 +44,7 @@ Utilities for Mesure "clock cycle" and "execution time" of code
 ### `systick.*`
 
 Utilities for delay "microseconds"
+
+## LICENSE
+
+See the file LICENSE on this same folder for more details
