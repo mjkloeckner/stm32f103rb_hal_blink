@@ -1,16 +1,13 @@
-# Stm32 blink example
+# Non-blocking blink example
+
+This is an example/template of a bare metal, event triggered application that
+runs tasks secuentally for STM32 boards using HAL library, in particular
+STM32F103RB on NUCLEO-F103RB board.
 
 ## Execution stack
 
-The main loop calls the main app and then this app executes the tasks
-secuentially in order
-
-```text
-app
-`- task_sensor
-`- task_system
-`- task_actuator
-```
+The main loop calls the main app and then this app executes the attached tasks
+secuentially in order: `task_sensor`, `task_system` and `task_actuator`.
 
 ## Debug
 
